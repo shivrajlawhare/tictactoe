@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    height: 50px;
+    background-color: black ;
+    color: white;
+}
+
+.nav-links{
+    list-style-type: none ;
+}
