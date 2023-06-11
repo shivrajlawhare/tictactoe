@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1baf95e9a0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>TicTacToe</title>
-</head>
-<body>
-    <nav class = "nav-bar">
-        <ul class="nav-links">
-            <li>tictactoe</li>
-        </ul>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li class="nav-links-item" id="logo">TicTacToe.com</li>
+      </ul>
     </nav>
-</body>
+    <div class="main-div">
+      <div class="info-div">
+        <div>
+          <span>X</span>
+          <span>O</span>
+        </div>
+        <div>
+          <span> TRUN: </span>
+          <span class = "turn-display">X</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+      </div>
+      <div class="game-grid" >
+        <div class="box" id="0"><span class = "box-symbol"></span></div>
+        <div class="box" id="1"><span class = "box-symbol"></span></div>
+        <div class="box" id="2"><span class = "box-symbol"></span></div>
+        <div class="box" id="3"><span class = "box-symbol"></span></div>
+        <div class="box" id="4"><span class = "box-symbol"></span></div>
+        <div class="box" id="5"><span class = "box-symbol"></span></div>
+        <div class="box" id="6"><span class = "box-symbol"></span></div>
+        <div class="box" id="7"><span class = "box-symbol"></span></div>
+        <div class="box" id="8"><span class = "box-symbol"></span></div>
+      </div>
+      <div class="score-div">
+        <div class="player">
+            <span >X won</span>
+            <span class = "x-Won">0</span>
+        </div>
+        <div class="player">
+            <span>Tie</span>
+            <span class="tie">0</span>
+        </div>
+        <div class="player">
+            <span>O won</span>
+            <span class = "o-Won">0</span>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
