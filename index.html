@@ -2,62 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/1baf95e9a0.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>TicTacToe</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="nav-bar">
-      <ul class="nav-links">
-        <li class="nav-links-item" id="logo">TicTacToe.com</li>
-      </ul>
-    </nav>
-    <div class="main-div">
+    <!-- <h6>@paralexdisha7</h6> -->
+    <section class="tab">
+        <!-- <h6>parale disha</h6> -->
+        <div><h2>TicTacToe</h2></div>
       <div class="info-div">
-        <div>
-          <span>X</span>
-          <span>O</span>
-        </div>
-        <div>
-          <span> TRUN: </span>
-          <span class = "turn-display">X</span>
-        </div>
-        <div>
-          <i class="fa-solid fa-rotate-right"></i>
-        </div>
+       
+        <div><span>Turn : </span><span class="turn-display">X</span></div>
+        <button id="reset-btn">Reset</button>
       </div>
-      <div class="game-grid" >
-        <div class="box" id="0"><span class = "box-symbol"></span></div>
-        <div class="box" id="1"><span class = "box-symbol"></span></div>
-        <div class="box" id="2"><span class = "box-symbol"></span></div>
-        <div class="box" id="3"><span class = "box-symbol"></span></div>
-        <div class="box" id="4"><span class = "box-symbol"></span></div>
-        <div class="box" id="5"><span class = "box-symbol"></span></div>
-        <div class="box" id="6"><span class = "box-symbol"></span></div>
-        <div class="box" id="7"><span class = "box-symbol"></span></div>
-        <div class="box" id="8"><span class = "box-symbol"></span></div>
+      <div class="win-text"><h4 class="winner"></h4></div>
+      <div class="buttons">
+        <button class="box" id="0"><span class="box-symbol"></span></button>
+        <button class="box" id="1"><span class="box-symbol"></span></button>
+        <button class="box" id="2"><span class="box-symbol"></span></button>
+        <button class="box" id="3"><span class="box-symbol"></span></button>
+        <button class="box" id="4"><span class="box-symbol"></span></button>
+        <button class="box" id="5"><span class="box-symbol"></span></button>
+        <button class="box" id="6"><span class="box-symbol"></span></button>
+        <button class="box" id="7"><span class="box-symbol"></span></button>
+        <button class="box" id="8"><span class="box-symbol"></span></button>
       </div>
-      <div class="score-div">
-        <div class="player">
-            <span >X won</span>
-            <span class = "x-Won">0</span>
-        </div>
-        <div class="player">
-            <span>Tie</span>
-            <span class="tie">0</span>
-        </div>
-        <div class="player">
-            <span>O won</span>
-            <span class = "o-Won">0</span>
-        </div>
+      <div class="score-board">
+        <div>' X ' Won : <span class="xwon">0  </span></div>
+        <!-- <div >Tie  : <span class="tie">0  </span></div> -->
+        <div >' O ' Won : <span class="owon">0  </span></div>
+      </div>
+      <div class="restart">
+        <button id="restart-btn">Restart</button>
+      </div>
+    </section>
 
-      </div>
-    </div>
+    <script src="index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>
